@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Главная</title>
+  <style>
+      a {
+       line-height: 2
+       }
+
+      #left { position: absolute; left: 0; top: 15%; width: 20%; }
+      #right { position: absolute; right: 0; top: 15%; width: 80%; }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;}
+
+* {
+    box-sizing: border-box;}
+
+.container {
+    padding: 16px;
+    background-color: white;}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;}
+
+.registerbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;}
+
+.registerbtn:hover {
+    opacity: 1;}
+
+a {color: dodgerblue;}
+
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;}
+</style>
+</head>
+<body>
+<big><big><center><h1><b>DinoLAND</b></h1></center></big></big>
+    <hr></hr>
+
+    <div id="left">
+      <center><h2>Основные разделы:</h2></center>
+      <ul id="navbar">
+        <li><a href="main">Главная</a></li>
+        <li><a href="random_fact">Рандомный факт</a></li>
+        <li><a href="random_dinosaur">Случайный динозавр</a></li>
+        <li><a href="tests">Тесты</a></li>
+        <li><a href="new_dinosaur">Добавь своего динозавра</a></li>
+        <li><a href="registration">Вход/Регистрация</a></li>
+      </ul>
+    </div>
+
+    <div id="right">
+
+<form action="/action_page.php">
+  <div class="container">
+    <h1>Вход</h1>
+    <p>Заполните эти поля чтобы войти в аккаунт.</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Введите Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Введите пароль" name="psw" required>
+
+    <hr>
+
+    <button type="submit" class="registerbtn">Войти</button>
+  </div>
+
+  <div class="container signin">
+    <p>Еще нет аккаунта? <a href="registration">Регистрация</a>.</p>
+  </div>
+</form>
+    </div>>
+
+</body>
+</html>
+
